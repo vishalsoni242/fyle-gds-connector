@@ -1,4 +1,4 @@
-var BASE_URL = "https://staging.fyle.in";
+var BASE_URL = "https://app.fyle.in";
 
 function getOAuthService() {
   return OAuth2.createService("fyle")

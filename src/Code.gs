@@ -48,7 +48,7 @@ function getData(request) {
     var requestedFields = getExpenseSchema().forIds(requestedFieldIds);
 
     var response = UrlFetchApp.fetch(
-      "https://staging.fyle.in/api/tpa/v1/expenses",
+      "https://app.fyle.in/api/tpa/v1/expenses",
       { headers: headers }
     );
     var parsedResponse = JSON.parse(response).data;
