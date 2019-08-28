@@ -1,0 +1,22 @@
+{
+    "timeZone": "Asia/Kolkata",
+    "dependencies": {
+        "libraries": [
+            {
+                "userSymbol": "OAuth2",
+                "libraryId": "1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF",
+                "version": "33"
+            }
+        ]
+    },
+    "exceptionLogging": "STACKDRIVER",
+    "dataStudio": {
+        "name": "Fyle Connector - Testing",
+        "logoUrl": "https://staging.fyle.in/app/accounts/assets/images/icons/fyle_logo_new.png",
+        "company": "Fyle Staging",
+        "companyUrl": "https://staging.fyle.in/",
+        "addonUrl": "https://github.com/vishalsoni242/Fyle-Connector-for-Google-Data-Studio",
+        "supportUrl": "https://staging.fyle.in/",
+        "description": "The Connctor which fetches data from Fyle"
+    }
+}
