@@ -12,9 +12,9 @@
     "exceptionLogging": "STACKDRIVER",
     "dataStudio": {
         "name": "Fyle Connector - Testing",
-        "logoUrl": "https://staging.fyle.in/app/accounts/assets/images/icons/fyle_logo_new.png",
-        "company": "Fyle Staging",
-        "companyUrl": "https://staging.fyle.in/",
+        "logoUrl": "https://app.fyle.in/app/accounts/assets/images/icons/fyle_logo_new.png",
+        "company": "Fyle",
+        "companyUrl": "https://www.fylehq.com/",
         "addonUrl": "https://github.com/fylein/fyle-gds-connector",
         "supportUrl": "https://app.fyle.in",
         "description": "The Connctor which fetches data from Fyle"
