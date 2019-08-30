@@ -1,11 +1,9 @@
-var BASE_URL = "https://app.fyle.in";
-
 function getOAuthService() {
   return OAuth2.createService("fyle")
     .setAuthorizationBaseUrl(BASE_URL + "/app/main/#/oauth/authorize")
     .setTokenUrl(BASE_URL + "/api/oauth/token")
-    .setClientId("...")
-    .setClientSecret("...")
+    .setClientId(CLIENT_ID)
+    .setClientSecret(CLIENT_SECRET)
     .setPropertyStore(PropertiesService.getUserProperties())
     .setCallbackFunction("authCallback");
 }

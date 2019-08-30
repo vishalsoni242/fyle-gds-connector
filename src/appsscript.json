@@ -11,7 +11,7 @@
     },
     "exceptionLogging": "STACKDRIVER",
     "dataStudio": {
-        "name": "Fyle Connector - Testing",
+        "name": "Fyle Connector",
         "logoUrl": "https://app.fyle.in/app/accounts/assets/images/icons/fyle_logo_new.png",
         "company": "Fyle",
         "companyUrl": "https://www.fylehq.com/",
