@@ -17,6 +17,6 @@
         "companyUrl": "https://www.fylehq.com/",
         "addonUrl": "https://github.com/fylein/fyle-gds-connector",
         "supportUrl": "https://app.fyle.in",
-        "description": "The Connctor which fetches data from Fyle"
+        "description": "The Connector which fetches data from Fyle"
     }
 }
