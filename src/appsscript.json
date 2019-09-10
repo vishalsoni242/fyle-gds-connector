@@ -10,9 +10,7 @@
     ]
   },
   "exceptionLogging": "STACKDRIVER",
-  "urlFetchWhitelist": [
-    "https://app.fyle.in/"
-  ],
+  "urlFetchWhitelist": ["https://app.fyle.in/"],
   "dataStudio": {
     "name": "Fyle Connector",
     "logoUrl": "https://app.fyle.in/app/accounts/assets/images/icons/fyle_logo_new.png",
@@ -21,14 +19,11 @@
     "addonUrl": "https://www.fylehq.com/",
     "supportUrl": "https://github.com/fylein/fyle-gds-connector/issues/new?title=Fyle%20Connector%20Issue",
     "description": "The Connector which fetches data from Fyle",
-    "authType": [
-      "OAUTH2"
-    ],
+    "authType": ["OAUTH2"],
     "shortDescription": "Fyle Connector",
-    "feeType": [
-      "FREE"
-    ],
+    "feeType": ["FREE"],
     "privacyPolicyUrl": "https://www.fylehq.com/privacy/privacy-policy",
-    "termsOfServiceUrl": "https://www.fylehq.com/privacy/terms-and-conditions"
+    "termsOfServiceUrl": "https://www.fylehq.com/privacy/terms-and-conditions",
+    "sources": ["FYLE"]
   }
 }
