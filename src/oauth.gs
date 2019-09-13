@@ -4,8 +4,8 @@ function getOAuthService() {
   var CLIENT_SECRET = scriptProps.getProperty("OAUTH_CLIENT_SECRET");
 
   return OAuth2.createService("fyle")
-    .setAuthorizationBaseUrl(BASE_URL + "/app/main/#/oauth/authorize")
-    .setTokenUrl(BASE_URL + "/api/oauth/token")
+    .setAuthorizationBaseUrl(AUTH_URL)
+    .setTokenUrl(TOKEN_URL)
     .setClientId(CLIENT_ID)
     .setClientSecret(CLIENT_SECRET)
     .setPropertyStore(PropertiesService.getUserProperties())

@@ -20,7 +20,7 @@
     "supportUrl": "https://github.com/fylein/fyle-gds-connector/issues/new?title=Fyle%20Connector%20Issue",
     "description": "The Connector which fetches data from Fyle",
     "authType": ["OAUTH2"],
-    "shortDescription": "Fyle Connector",
+    "shortDescription": "Fyle is an effortless expense management for all business spends.",
     "feeType": ["FREE"],
     "privacyPolicyUrl": "https://www.fylehq.com/privacy/privacy-policy",
     "termsOfServiceUrl": "https://www.fylehq.com/privacy/terms-and-conditions",

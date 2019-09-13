@@ -16,6 +16,18 @@ function getConfig(request) {
         .newOptionBuilder()
         .setLabel("Expenses")
         .setValue("Expenses")
+    )
+    .addOption(
+      config
+        .newOptionBuilder()
+        .setLabel("Advances")
+        .setValue("Advances")
+    )
+    .addOption(
+      config
+        .newOptionBuilder()
+        .setLabel("Trip Requests")
+        .setValue("Trip Requests")
     );
 
   return config.build();
@@ -24,7 +36,11 @@ function getConfig(request) {
 function getSchema(request) {
   var fields;
   if (request.configParams.obj_type == "Expenses") {
-    fields = getExpenseSchema(request).build();
+    fields = getExpensesSchema(request).build();
+  } else if (request.configParams.obj_type == "Advances") {
+    fields = getAdvancesSchema(request).build();
+  } else if (request.configParams.obj_type == "Trip Requests") {
+    fields = getTripRequestsSchema(request).build();
   }
   return { schema: fields };
 }
@@ -41,13 +57,29 @@ function getData(request) {
   var requestedFields, rows;
 
   if (request.configParams.obj_type == "Expenses") {
-    requestedFields = getExpenseSchema().forIds(requestedFieldIds);
+    requestedFields = getExpensesSchema().forIds(requestedFieldIds);
 
-    var response = UrlFetchApp.fetch(BASE_URL + "/api/tpa/v1/expenses", {
+    var response = UrlFetchApp.fetch(GET_EXPENSES_URL, {
       headers: headers
     });
     var parsedResponse = JSON.parse(response).data;
-    rows = expenseProcessing(requestedFields, parsedResponse);
+    rows = expensesProcessing(requestedFields, parsedResponse);
+  } else if (request.configParams.obj_type == "Advances") {
+    requestedFields = getAdvancesSchema().forIds(requestedFieldIds);
+
+    var response = UrlFetchApp.fetch(GET_ADVANCES_URL, {
+      headers: headers
+    });
+    var parsedResponse = JSON.parse(response).data;
+    rows = advancesProcessing(requestedFields, parsedResponse);
+  } else if (request.configParams.obj_type == "Trip Requests") {
+    requestedFields = getTripRequestsSchema().forIds(requestedFieldIds);
+    
+    var response = UrlFetchApp.fetch(GET_TRIP_REQUESTS_URL, {
+      headers: headers
+    });
+    var parsedResponse = JSON.parse(response).data;
+    rows = tripRequestsProcessing(requestedFields, parsedResponse);
   }
 
   return {
